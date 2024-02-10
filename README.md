@@ -37,7 +37,7 @@ To use the provided scripts for galaxy classification:
 2. Clone this repository to your local machine.
 3. Install the required dependencies listed in `requirements.txt`.
 4. Run `decision_tree_classifier.py` and `random_forest_classifier.py` to train and evaluate the respective classifiers.
-5. Finally, run `accuracy_comparison.py` to compare the accuracy of both classifiers based on the tabulated results.
+5. Finally, run `accuracy_comparison.py` to compare the accuracy of both classifiers.
 
 ## Dataset
 
