@@ -1,18 +1,10 @@
 import numpy as np
-import itertools
+from support_functions import splitdata_train_test
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import confusion_matrix
 from support_functions import calculate_accuracy, generate_features_targets, plot_confusion_matrix
 import matplotlib.pyplot as plt
-
-
-# splitdata_train_test function here
-def splitdata_train_test(data, fraction_training):
-    np.random.seed(0)
-    np.random.shuffle(data)
-    split = int(len(data) * fraction_training)
-    return data[:split], data[split:]
 
 
 def dtc_predict_actual(data):
@@ -39,6 +31,7 @@ def dtc_predict_actual(data):
 
 if __name__ == '__main__':
     data = np.load('galaxy_catalogue.npy')
+
 
     # split the data
     features, targets = generate_features_targets(data)

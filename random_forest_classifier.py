@@ -35,7 +35,7 @@ if __name__ == "__main__":
     class_labels = list(set(actual))
     model_cm = confusion_matrix(y_true=actual, y_pred=predicted, labels=class_labels)
 
-    # plot the confusion matrix using the provided functions.
+    # plot the confusion matrix
     plt.figure()
     plot_confusion_matrix(model_cm, classes=class_labels, normalize=False)
     plt.show()

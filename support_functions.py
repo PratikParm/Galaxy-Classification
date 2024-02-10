@@ -3,6 +3,12 @@ import itertools
 from matplotlib import pyplot as plt
 
 
+def splitdata_train_test(data, fraction_training):
+    np.random.seed(0)
+    np.random.shuffle(data)
+    split = int(len(data) * fraction_training)
+    return data[:split], data[split:]
+
 def calculate_accuracy(predicted_classes, actual_classes, ):
     return sum(actual_classes[:] == predicted_classes[:]) / len(actual_classes)
 
