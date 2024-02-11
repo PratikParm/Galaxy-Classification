@@ -56,8 +56,3 @@ The Galaxy Zoo dataset used for galaxy classification contains the following col
 ## Results
 
 The results of the accuracy comparison between the decision tree classifier and the random forest classifier are available in the tabulated format in the repository.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
